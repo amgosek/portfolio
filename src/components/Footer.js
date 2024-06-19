@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { MailchimpForm } from "./MailchimpForm";
 import { FaTiktok, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
-import logo from "../assets/img/logo.svg";
+import logo from "../assets/img/newLogo.png";
 
 export const Footer = () => {
   return (

@@ -4,7 +4,7 @@ import { FaTiktok, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from "react-router-dom";
 
-import logo from '../assets/img/logo.svg';
+import logo from '../assets/img/newLogo.png';
 export const NavBar = () => {
 
   const [activeLink, setActiveLink] = useState('home');
