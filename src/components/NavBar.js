@@ -52,7 +52,7 @@ export const NavBar = () => {
               <a href="https://github.com/amgosek" target="_blank" rel="noopener noreferrer">
                 <FaGithub size={16} />
               </a>
-              <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.tiktok.com/@jokesnstuff?lang=en" target="_blank" rel="noopener noreferrer">
                 <FaTiktok size={16} />
               </a>
             </div>
