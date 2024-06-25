@@ -7,6 +7,8 @@ import projImg4 from "../assets/img/project-img4.png";
 import projImg5 from "../assets/img/project-img5.png";
 import projImg6 from "../assets/img/project-img6.png";
 import projImg7 from "../assets/img/project-img7.png";
+import projImg8 from "../assets/img/project-img8.png";
+
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -16,26 +18,30 @@ export const Projects = () => {
 
   const schoolprojects = [
     {
-      title: "Business Startup",
+      title: "Professional Portfolio",
       description: "Design & Development",
       imgUrl: projImg6,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Community College Capstone",
+      description: "Team Development",
       imgUrl: projImg7,
+    },
+    {
+      title: "Full Stack Development",
+      description: "Design & Development",
+      imgUrl: projImg5,
     },
   ];
 
   const workprojects = [
-
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
+      title: "Triangle Automation Research LLC",
       description: "Design & Development",
       imgUrl: projImg4,
     },
@@ -53,11 +59,10 @@ export const Projects = () => {
       imgUrl: projImg3,
     },
     {
-      title: "Business Startup",
+      title: "Open Source Project",
       description: "Design & Development",
-      imgUrl: projImg5,
+      imgUrl: projImg8,
     },
-
   ];
 
   return (
@@ -73,20 +78,20 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">School</Nav.Link>
+                      <Nav.Link eventKey="first">Personal</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="second">Work</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Personal</Nav.Link>
+                      <Nav.Link eventKey="third">School</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          schoolprojects.map((project, index) => {
+                          personalprojects.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -114,7 +119,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="third">
                     <Row>
                         {
-                          personalprojects.map((project, index) => {
+                          schoolprojects.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
